@@ -14,18 +14,21 @@
 </head>
 <!-- Responsive navbar-->
 <div class="col-5" id="left">
-    <div class="row container hero-info my-0">
+    <div class="row hero-info my-0">
         <div class="col listing-address">
             <p class="street">12344 Crestline Lane</p>
             <p class="city">Spokane, WA 99204</p>
-        </div>
-        <div class="col listing-price">
-            <hr />
-            <p>$1,452,000</p>
+            <div class="col listing-price">
+                <hr />
+                <p>$1,452,000</p>
+            </div>
         </div>
         <div class="col-12 links">
-            <a href="#Gallery">gallery</a>
-            <a href="#Tour">tour</a>
+            <a href="#Overview">Property Details</a>
+            <a href="#Floorplan">Floor Plan</a>
+            <a href="#Gallery">Gallery</a>
+            <a href="#Location">Location</a>
+            <a href="#Featured">Virtual Tour</a>
             <a href="#Contact">contact</a>
         </div>
     </div>
@@ -79,9 +82,23 @@
     </div>
     <div class="container amenities" id="Amenities">
         <div class="row">
+            <div class="overlay"></div>
             <div class="col-12">
                 <h2>Amenities</h2>
                 <p>24-Hour Door Person, Balcony, Deck, Barn/Stable - Detached, Basement - Unfinished, Bedroom on Main Floor, Broadband Available, Central Air, Central Vacuum System, Fireplace, Forced Air, Gas Heat, Hardwood Floors, Office/Den, Parking/Garage, Included Satellite, Dishwasher, Surround Sound, Tile Floors, Utilities on Main Floor, Utilities on Upper Floor, Vaulted Ceilings</p>
+            </div>
+        </div>
+    </div>
+    <div class="container py-section" id="Featured">
+        <div class="row">
+            <div class="col-12"><h2 class="property-location">Featured</h2></div>
+        </div>
+        <div class="row featured-content">
+            <div class="col-12 col-md-6"><iframe class="video" src="https://www.youtube.com/embed/JGF2TZzGUek" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+            <div class="col-12 col-md-6">
+                <h4>Lorem ipsum dolor sit amet</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime saepe expedita numquam placeat dignissimos necessitatibus nulla totam, nesciunt ad recusandae!</p>
+                <button class="btn">View The Virtual Tour</button>
             </div>
         </div>
     </div>
@@ -115,6 +132,12 @@
             </div>
         </div>
     </div>
+    <div class="container py-section" id="Floorplan">
+        <div class="row">
+            <div class="col-12"><h2 class="property-location">Floorplan</h2></div>
+            <div class="col-12"><img src="assets/images/floorplan.svg" /></div>
+        </div>
+    </div>
     <div class="container py-section" id="Location">
         <div class="row">
             <div class="col-12"><h2 class="property-location">Property Location</h2></div>
@@ -122,7 +145,7 @@
     </div>
     <div id="Map">
         <div class="row">
-            <div class="col-12"><div class="google-map" id="map1" data-map-lat="40.925372" data-map-lng="-74.276544" data-icon-path="assets/images/map/1.png" data-map-zoom="12"></div></div>
+            <div class="col-12"><div class="google-map" id="map1" data-map-lat="40.925372" data-map-lng="-74.276544" data-map-zoom="12"></div></div>
         </div>
     </div>
     <div class="container agent py-section" id="Agent">
