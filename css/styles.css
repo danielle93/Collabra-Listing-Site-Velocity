@@ -316,23 +316,6 @@ nav.navbar .nav-item a:hover {
     font-size: 10px;
   }
 
-  .agent-photo {
-    margin-bottom: 2em;
-    height: auto !important;
-  }
-
-  .contact-form, .agent-info {
-    margin-top: 2em;
-  }
-
-  .agent-info p:last-of-type {
-    margin-top: 1em !important;
-  }
-
-  .agent-info h6 {
-    margin-bottom: 1em !important;
-  }
-
   .property-description {
     display: none;
   }
@@ -569,6 +552,90 @@ section.gallery img {
   transform: translate(-50%, -50%) rotate(45deg);
 }
 
+.agent h2 {
+  margin-bottom: 20px;
+}
+
+.agent-card {
+  font-family: "Lato", helvetica, san-serif;
+  width: 375px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.58);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  margin-bottom: 2em;
+}
+.agent-card .agent-contact-info a {
+  color: #010101;
+}
+.agent-card .agent-name {
+  font-size: 18px;
+  margin: 5px 0;
+  color: #666;
+  letter-spacing: 0;
+  text-transform: capitalize;
+  font-weight: 700;
+  margin: 0;
+}
+.agent-card .office {
+  font-size: 14px;
+  margin: 5px 0;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  color: #888;
+}
+.agent-card .agent-info {
+  padding-left: 1.5em;
+  font-size: 12px;
+}
+.agent-card .agent-info p {
+  margin: 0;
+  margin-top: 15px;
+}
+.agent-card .agent-image {
+  height: 175px;
+  width: 150px;
+  background-image: url("../assets/agent-photo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.agent-card .agent-image-2 {
+  height: 175px;
+  width: 150px;
+  background-image: url("../assets/agent-photo-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.agent-card a {
+  text-decoration: none;
+  color: #000;
+}
+
+.share {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  min-width: 350px;
+  width: 100%;
+}
+.share .office-logo {
+  background-image: url("../assets/FakeOfficeLogo_RealEstate-01.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 400px;
+  margin-top: -25px;
+  width: 100%;
+  background-position: center;
+}
+.share .social_icon {
+  margin-top: -75px;
+}
+
 /* ============= Contact Agent ============= */
 .wrapper {
   margin: 0 auto;
@@ -689,10 +756,11 @@ input[type=text]:focus, textarea:focus {
   color: #a0a0a0;
   border-radius: 50%;
   transition: ease all 500ms;
+  padding: 10px 0;
 }
 
 .social_icon ul li a:hover {
-  background: #000;
+  background: rosybrown;
   color: #fff;
 }
 
