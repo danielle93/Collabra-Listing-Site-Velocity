@@ -411,7 +411,7 @@ nav.navbar .nav-item a:hover {
 
 .google-map {
   min-height: 300px;
-  width: 100%;
+  width: 100% !important;
 }
 
 /* ===========f== MASONRY GALLERY ============= */
@@ -809,6 +809,16 @@ footer p {
 }
 
 /* ================ Media Queries ================= */
+@media screen and (min-height: 700) {
+  .listing-address .listing-price {
+    font-size: 4rem;
+    transition: ease all 500ms;
+  }
+  .listing-address .street {
+    font-size: 2.5rem;
+    transition: ease all 500ms;
+  }
+}
 @media screen and (min-width: 4000px) {
   .listing-address .listing-price {
     font-size: 12rem;
@@ -879,6 +889,11 @@ footer p {
   nav.navbar {
     background: #fff;
   }
+
+  .hero-info .links {
+    font-size: 10px;
+    transition: ease all 500ms;
+  }
 }
 @media screen and (max-width: 768px) {
   .d-none {
@@ -935,6 +950,19 @@ footer p {
   .listing-address .street {
     font-size: 4rem;
     transition: ease all 500ms;
+  }
+}
+@media screen and (min-width: 300) {
+  .listing-address .listing-price {
+    font-size: 2rem;
+    transition: ease all 500ms;
+  }
+  .listing-address .street {
+    font-size: 3rem !important;
+    transition: ease all 500ms;
+  }
+  .listing-address .city {
+    font-size: 1.4rem;
   }
 }
 /*!
