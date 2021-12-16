@@ -58,7 +58,6 @@ nav.navbar {
   position: fixed;
   width: 100%;
   z-index: 99;
-  background: transparent;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.6);
   justify-content: space-between;
@@ -809,6 +808,89 @@ footer p {
   font-size: 12px;
 }
 
+/* ================ Media Queries ================= */
+@media screen and (min-width: 769px) and (max-width: 900px) {
+  .listing-address .street {
+    font-size: 3rem;
+    transition: ease all 500ms;
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+  .listing-address .street {
+    font-size: 4rem;
+    transition: ease all 500ms;
+  }
+}
+@media screen and (min-width: 900px) {
+  .d-none-desktop {
+    display: none;
+  }
+
+  .d-none {
+    display: flex !important;
+  }
+
+  nav.navbar {
+    background: #fff;
+  }
+}
+@media screen and (max-width: 768px) {
+  .d-none {
+    display: none !important;
+  }
+
+  nav.navbar {
+    background: rosybrown;
+  }
+
+  body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  body #right {
+    position: relative;
+    width: 100% !important;
+    position: relative;
+  }
+  body #left {
+    background: rosybrown;
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    position: static !important;
+    display: flex;
+    padding: 0 3em;
+    padding-top: 3em;
+  }
+  body nav {
+    left: 0;
+    top: 0;
+  }
+  body .agent .agent-card {
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 3em;
+  }
+  body .share .office-logo {
+    margin-top: 0;
+  }
+
+  .agent-card .agent-info {
+    width: 300px;
+  }
+
+  .agent-card .agent-image, .agent-card .agent-image-2 {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .listing-address .street {
+    font-size: 4rem;
+    transition: ease all 500ms;
+  }
+}
 /*!
 * Start Bootstrap - Bare v5.0.3 (https://startbootstrap.com/template/bare)
 * Copyright 2013-2021 Start Bootstrap
@@ -8082,7 +8164,7 @@ textarea.form-control-lg {
 }
 
 .d-none {
-  display: none !important;
+  display: none;
 }
 
 .shadow {
