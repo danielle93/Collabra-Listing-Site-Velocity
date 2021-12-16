@@ -809,9 +809,55 @@ footer p {
 }
 
 /* ================ Media Queries ================= */
+@media screen and (min-width: 4000px) {
+  .listing-address .listing-price {
+    font-size: 12rem;
+    transition: ease all 500ms;
+  }
+  .listing-address .street {
+    font-size: 18rem;
+    transition: ease all 500ms;
+  }
+  .listing-address .city {
+    font-size: 8rem;
+  }
+
+  .hero-info .links {
+    font-size: 32px;
+    transition: ease all 500ms;
+    max-height: 300px;
+  }
+}
+@media screen and (min-width: 1800px) and (max-width: 3999px) {
+  .listing-address .listing-price {
+    font-size: 5rem;
+    transition: ease all 500ms;
+  }
+  .listing-address .street {
+    font-size: 7rem;
+    transition: ease all 500ms;
+  }
+  .listing-address .city {
+    font-size: 3rem;
+  }
+
+  .hero-info .links {
+    font-size: 14px;
+    transition: ease all 500ms;
+  }
+}
 @media screen and (min-width: 769px) and (max-width: 900px) {
+  .listing-address .listing-price {
+    font-size: 3rem;
+    transition: ease all 500ms;
+  }
   .listing-address .street {
     font-size: 3rem;
+    transition: ease all 500ms;
+  }
+
+  .hero-info .links {
+    font-size: 9px;
     transition: ease all 500ms;
   }
 }
