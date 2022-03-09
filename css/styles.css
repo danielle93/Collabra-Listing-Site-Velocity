@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*!
 * Start Bootstrap - Bare v5.0.4 (https://startbootstrap.com/template/bare)
-* Copyright 2013-2021 Start Bootstrap
+* Copyright 2013-2022 Start Bootstrap
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-bare/blob/master/LICENSE)
 */
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap");
@@ -24,7 +24,7 @@ h2 {
   font-size: 34px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #755b45;
+  color: #25272c;
 }
 
 input {
@@ -101,11 +101,11 @@ nav.navbar .nav-item a:hover {
 
 /* ================ HERO SECTION ================ */
 #left {
-  background: #a38163;
+  background: #484c55;
   height: 100vh;
   position: fixed;
   display: flex;
-  padding: 0 3em;
+  padding: 0 2em;
 }
 
 .hero {
@@ -159,7 +159,7 @@ nav.navbar .nav-item a:hover {
   flex-wrap: wrap;
   display: flex;
   align-items: center;
-  max-height: 125px;
+  max-height: 90px;
   height: 100%;
 }
 
@@ -167,12 +167,12 @@ nav.navbar .nav-item a:hover {
   color: #fff;
   display: inline;
   background: rgba(255, 255, 255, 0.25);
-  padding: 0.75em 1em;
+  padding: 0.75em 0.25em;
   text-transform: uppercase;
   text-decoration: none;
   border: 2px solid #fff;
   transition: ease 500ms all;
-  width: 30%;
+  width: 31%;
   margin: 0;
   text-align: center;
 }
@@ -258,7 +258,7 @@ nav.navbar .nav-item a:hover {
 .property-details .lg-num {
   font-size: 50px;
   font-weight: 500;
-  color: #755b45;
+  color: #25272c;
   margin: 0;
 }
 
@@ -277,7 +277,7 @@ nav.navbar .nav-item a:hover {
 }
 
 .property-description {
-  background: #494949;
+  background: #797c81;
   color: #fff;
   padding: 4em 0;
   position: relative;
@@ -335,7 +335,7 @@ nav.navbar .nav-item a:hover {
   flex-wrap: wrap;
 }
 #Featured .btn {
-  background: #755b45 !important;
+  background: #25272c !important;
   text-align: center;
   padding: 15px;
   border-radius: 0px !important;
@@ -346,7 +346,7 @@ nav.navbar .nav-item a:hover {
   transition: ease all 500ms;
 }
 #Featured .btn:hover {
-  background: #040303 !important;
+  background: black !important;
 }
 
 @media (min-width: 769px) {
@@ -376,7 +376,7 @@ nav.navbar .nav-item a:hover {
   font-size: 20px;
   font-weight: 300;
   margin: 2em auto !important;
-  background: #040303;
+  background: black;
   margin: 0 !important;
   padding-top: 4em;
   padding-bottom: 4em;
@@ -416,7 +416,7 @@ nav.navbar .nav-item a:hover {
 
 /* ===========f== MASONRY GALLERY ============= */
 #Gallery {
-  background: #494949;
+  background: #797c81;
   padding-top: 4em;
   padding-bottom: 4em;
   margin: 0;
@@ -709,7 +709,7 @@ input[type=text]:focus, textarea:focus {
 }
 
 .contact .btn {
-  background: #494949;
+  background: #797c81;
   text-align: center;
   padding: 15px;
   border-radius: 0px;
@@ -722,7 +722,7 @@ input[type=text]:focus, textarea:focus {
 
 .contact .btn:hover {
   color: #fff;
-  background: #232323;
+  background: #54565a;
 }
 
 .social_icon {
@@ -759,7 +759,7 @@ input[type=text]:focus, textarea:focus {
 }
 
 .social_icon ul li a:hover {
-  background: #a38163;
+  background: #484c55;
   color: #fff;
 }
 
@@ -784,7 +784,7 @@ input[type=text]:focus, textarea:focus {
 /* Footer  */
 footer {
   margin-top: 2em;
-  background: #040303;
+  background: black;
   padding: 1.5em 0;
 }
 
@@ -844,7 +844,7 @@ footer p {
     transition: ease all 500ms;
   }
   .listing-address .street {
-    font-size: 7rem;
+    font-size: 6rem;
     transition: ease all 500ms;
   }
   .listing-address .city {
@@ -865,16 +865,26 @@ footer p {
     font-size: 3rem;
     transition: ease all 500ms;
   }
+  .listing-address .city {
+    font-size: 2rem;
+  }
 
   .hero-info .links {
-    font-size: 9px;
+    font-size: 8px;
     transition: ease all 500ms;
+  }
+
+  #left {
+    padding: 0 1em;
   }
 }
 @media screen and (min-width: 900px) and (max-width: 1200px) {
   .listing-address .street {
     font-size: 4rem;
     transition: ease all 500ms;
+  }
+  .listing-address .city {
+    font-size: 2rem;
   }
 }
 @media screen and (min-width: 900px) {
@@ -901,7 +911,7 @@ footer p {
   }
 
   nav.navbar {
-    background: #a38163;
+    background: #484c55;
   }
 
   body {
@@ -915,15 +925,15 @@ footer p {
     position: relative;
   }
   body #left {
-    background: #a38163;
+    background: #484c55;
     width: 100%;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
     position: static !important;
     display: flex;
-    padding: 0 3em;
-    padding-top: 3em;
+    padding: 0 2em;
+    padding-top: 2em;
   }
   body nav {
     left: 0;
